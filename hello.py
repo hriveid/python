@@ -11,3 +11,7 @@ def return_greet():
 @app.post("/say_name")
 def say_name(name:str):
     return f"Hello,{name}"
+
+@app.get("/say_name/{name}")
+def say_name(name:str):
+    return f"Hello,{name}"
