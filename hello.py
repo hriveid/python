@@ -8,3 +8,6 @@ def return_greet():
     return "Hello,World!"
 
 
+@app.post("/say_name")
+def say_name(name:str):
+    return f"Hello,{name}"
